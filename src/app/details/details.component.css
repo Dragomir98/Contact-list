@@ -1,0 +1,94 @@
+* {
+    background-color: #f5f1e9;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  
+  .card {
+    border: 1px solid #3252a8;
+    border-radius: 4px;
+    margin: 40px 18% 0 18%;
+    display: flex;
+  }
+  .card:hover {
+    transition-duration: 0.15s;
+    border-color: #aeb9d6;
+  }
+
+  /*CSS for the table view:*/
+  h2 {
+    margin-top: 10px;
+    text-align: center;
+    color: darkblue;
+  }
+
+  .tStyle {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 55px 20px 55px;
+    border: 2px solid #8334eb;
+    border-collapse: separate;
+    border-radius: 5px;
+  }
+  .tStyle:hover {
+    border-color: #347aeb;
+  }
+
+  tr {
+    padding-top: 15px;
+  }
+
+  th {
+    background-color: #566ad1;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  tr:hover th {
+    background-color: #a9b1d6;
+    transition-duration: 0.10s;
+  }
+
+  .info {
+    background-color: #e8e3d5;
+    color: black;
+  }
+
+  tr:hover .info {
+    background-color: #dbbe6e;
+  }
+
+  .card-footer {
+    background-color: #405061;
+  }
+
+  .delBtn {
+    float: right;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: red;
+  }
+  .delBtn:hover {
+    transition-duration: 0.20s;
+    background-color: #c93232;
+    border-color: white;
+    color: white;
+  }
+  .editBtn {
+    float: right;
+    margin-right: 8px;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #3db360;
+    border-radius: 4px;
+    color: #3db360;
+  }
+  .editBtn:hover {
+    transition-duration: 0.20s;
+    background-color: #3db360;
+    border-color: white;
+    color: white;
+  }

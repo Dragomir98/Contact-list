@@ -1,0 +1,38 @@
+<div class='card'>
+  
+  <h2>{{ pageTitle }} for Contact ID: {{ person.id }} </h2>
+
+  <table class="tStyle">
+    <tr>
+      <th>First Name:</th>
+      <td class="info">{{ person.firstName }}</td>
+    </tr>
+    <tr>
+      <th>Last Name:</th>
+      <td class="info">{{ person.lastName }}</td>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td class="info">{{ person.email }}</td>
+    </tr>
+    <tr>
+      <th>Job:</th>
+      <td class="info">{{ person.job }}</td>
+    </tr>
+    <tr>
+      <th>Phone number:</th>
+      <td class="info">{{ person.phoneNumber }}</td>
+    </tr>
+    <tr>
+      <th>Description:</th>
+      <td class="info">{{ person.description }}</td>
+    </tr>
+  </table>
+
+    <div class='card-footer'>
+        <button class='btn btn-outline-info' (click)='onBack()' style='width:80px'>Back</button>  
+        <button class="delBtn" (click)="deletePerson(person)">Delete</button>
+        <button class="editBtn" (click)="editPerson(person)">Edit</button>
+    </div>
+
+</div>

@@ -1,0 +1,41 @@
+<div class="personList">
+  <div class="searchBar">
+    <input type="text" class="form-control" placeholder="Search for something..." [(ngModel)]="term">
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr class="headers">
+        <th>Id</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Job</th>
+        <th>Phone number</th>
+        <th>Description</th>
+        <th>Details</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of people | filter : term">
+        <td>{{ person.id }}</td>
+        <td>{{ person.firstName }}</td>
+        <td>{{ person.lastName }}</td>
+        <td>{{ person.email }}</td>
+        <td>{{ person.job }}</td>
+        <td>{{ person.phoneNumber }}</td>
+        <td>{{ person.description }}</td>
+        <td>
+          <button class="btn btn-success ml-2" [routerLink]="['/details', person.id]">Details</button>
+        </td>
+        <td>
+          <button class="btn btn-primary ml-2" (click)="editPerson(person) ">Edit</button>
+        </td>
+        <td>
+          <button class="btn btn-danger ml-2" (click)="deletePerson(person) ">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

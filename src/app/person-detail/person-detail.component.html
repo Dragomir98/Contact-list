@@ -1,0 +1,20 @@
+<div class='card'>
+  
+  <h2>{{ pageTitle }}:</h2>
+  <ul class="people">
+    <li *ngFor="let person of people" [routerLink]="['/details', person.id]">
+      <span class="badge">{{person.id}}</span> {{person.firstName}} {{person.lastName}}: {{person.description}}
+      <button class="btn btn-danger ml-2 " (click)="deletePerson(person)">Delete</button>
+      <div class="moreInfo">Email: {{person.email}}, Job: {{person.job}}, Phone number: {{person.phoneNumber}}</div>
+    </li>
+    
+  </ul>
+
+    <div class='card-footer'>
+        <button class='btn btn-outline-info'
+                (click)='onBack()'
+                style='width:80px'>Back   
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+form {
+    width: 600px;
+    margin: auto;
+    background-color: #daebed;
+    border: 2px solid skyblue;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+form:hover {
+    transition-duration: 0.20s;
+    border: 2px solid #5f4fb3;
+}
+
+.card-footer {
+    text-align: center;
+    background-color: #405061;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #633058;
+}
+
+.feedback-red {
+    color: red;
+}

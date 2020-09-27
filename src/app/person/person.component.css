@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.personList {
+    margin:  0 35px 0 35px;
+}
+
+.searchBar {
+    margin: 20px auto;
+    width: 300px;
+    max-width: 400px;
+    height: 40px; 
+    text-align: center; 
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.searchBar:hover {
+    border-color: blue;
+}
+
+table {
+    font-size: 20px;
+}
+
+.headers th {
+    background-color: #bfdede;
+    border: 2px solid black;
+}
+
+table, tr, td {
+    border: 2px solid black;
+}
+
+td {
+    background-color: #f5f3f0;
+}
