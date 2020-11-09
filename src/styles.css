@@ -1,4 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    background-color: #f5e7d3;
+body {  
+    background: linear-gradient(to right, rgb(141, 113, 141) 0%, rgb(94, 94, 187) 50%, rgb(177, 155, 115) 100%);
+}
+
+@media screen and (max-width: 275px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 170px) {
+    h1 {
+        font-size: 25px;
+    }
 }

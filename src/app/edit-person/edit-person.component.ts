@@ -39,13 +39,6 @@ export class EditPersonComponent implements OnInit {
   //Jobs for the dropdown menu
   Job: any = ['Businessman', 'Writer', 'American spy', 'Influencer'];
 
-  //Checks if the text field contains an entrie. 
-  //If the entrie is valid the Submit-Button will be activated
-  isInvalid(name: string) {
-    const control = this.addForm.get(name);
-    return control.invalid && control.dirty;
-  }
-
   //Checks if the text field contains an valid email.
   isEmailInvalid(name: string) {
     const control = this.addForm.get(name);

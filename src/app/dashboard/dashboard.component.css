@@ -1,12 +1,30 @@
 .navbtn {
-    background-color: #405061;
+    background-color: #06192e;
     padding: 10px 0 10px 0;
     text-align: center;
+    min-width: 1030px;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbtn {
+        min-width: 200px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    a {
+        display: inline-block;
+        width: 70%;
+        margin: 10px;
+    }
 }
 
 

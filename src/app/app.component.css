@@ -1,11 +1,26 @@
 * {
-    text-align: center;
-    margin-top: 10px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     margin: 0;
 }
 
 h1 {
-    color: darkblue;
+    background: -webkit-linear-gradient(rgb(230, 225, 221), rgb(180, 168, 168));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 20px;
+    min-width: 1000px;
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 230px) {
+    h1 {
+        text-align: left;
+    }
 }
 

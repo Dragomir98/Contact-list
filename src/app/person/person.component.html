@@ -1,41 +1,42 @@
-<div class="personList">
+<div class="container">
   <div class="searchBar">
     <input type="text" class="form-control" placeholder="Search for something..." [(ngModel)]="term">
   </div>
   <table class="table table-bordered">
     <thead>
       <tr class="headers">
-        <th>Id</th>
-        <th>First name</th>
-        <th>Last name</th>
-        <th>Email</th>
-        <th>Job</th>
-        <th>Phone number</th>
-        <th>Description</th>
-        <th>Details</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th class="gridTh">Id</th>
+        <th class="gridTh">First name</th>
+        <th class="gridTh">Last name</th>
+        <th class="gridTh">Email</th>
+        <th class="gridTh">Job</th>
+        <th class="gridTh">Phone number</th>
+        <th class="gridTh">Description</th>
+        <th class="gridTh">Details</th>
+        <th class="gridTh">Edit</th>
+        <th class="gridTh">Delete</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let person of people | filter : term">
-        <td>{{ person.id }}</td>
-        <td>{{ person.firstName }}</td>
-        <td>{{ person.lastName }}</td>
-        <td>{{ person.email }}</td>
-        <td>{{ person.job }}</td>
-        <td>{{ person.phoneNumber }}</td>
-        <td>{{ person.description }}</td>
-        <td>
+        <td class="gridTd">{{ person.id }}</td>
+        <td class="gridTd">{{ person.firstName }}</td>
+        <td class="gridTd">{{ person.lastName }}</td>
+        <td class="gridTd">{{ person.email }}</td>
+        <td class="gridTd">{{ person.job }}</td>
+        <td class="gridTd">{{ person.phoneNumber }}</td>
+        <td class="gridTd">{{ person.description }}</td>
+        <td class="gridTd">
           <button class="btn btn-success ml-2" [routerLink]="['/details', person.id]">Details</button>
         </td>
-        <td>
+        <td class="gridTd">
           <button class="btn btn-primary ml-2" (click)="editPerson(person) ">Edit</button>
         </td>
-        <td>
+        <td class="gridTd">
           <button class="btn btn-danger ml-2" (click)="deletePerson(person) ">Delete</button>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
+
